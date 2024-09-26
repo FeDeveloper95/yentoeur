@@ -1,0 +1,117 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Converter Card */
+.converter {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1f3c57;
+    font-weight: 700;
+}
+
+/* Input Fields */
+.input-container {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: white;
+    padding: 0 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    padding-left: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f7f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #1f3c57;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #005a9e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
